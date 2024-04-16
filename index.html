@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html,
+      body {
+        background: radial-gradient(#6db3be, #006a83);
+        background-attachment: fixed;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+        height: 100vh;
+        max-height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      canvas {
+        position: fixed;
+        left: auto;
+        top: auto;
+        max-width: 100% !important;
+        max-height: 100% !important;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="background" style="z-index: 0"></canvas>
+    <canvas id="game" style="z-index: 1"></canvas>
+    <canvas id="ui" style="z-index: 2"></canvas>
+
+    <canvas id="effect" style="z-index: 0"></canvas>
+
+    <script src="./lib.js"></script>
+    <script src="./progress.js"></script>
+    <script src="./audio.js"></script>
+
+    <script src="./menuUI.js"></script>
+    <script src="./menuScene.js"></script>
+
+    <script src="./sceneState.js"></script>
+    <script src="./ballStateMachine.js"></script>
+    <script src="./ball.js"></script>
+    <script src="./brick.js"></script>
+    <script src="./bonus.js"></script>
+    <script src="./effects.js"></script>
+
+    <script src="./score.js"></script>
+    <script src="./gameOverUI.js"></script>
+
+    <script src="./gameStateMachine.js"></script>
+    <script src="./gameUI.js"></script>
+    <script src="./gameScene.js"></script>
+    <script src="./game.js"></script>
+    <script src="./control.js"></script>
+  </body>
+</html>
